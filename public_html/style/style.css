@@ -7,6 +7,10 @@ body {
   width: 1600px;
   padding: 0;
 }
+
+.hidden {
+  display: none;
+}
 .wrapper {
     width: 1200px;
     margin: 0 auto;
@@ -97,7 +101,7 @@ align-items: center;
     color: #a4a4a4;
     padding-left: 16px;
     box-shadow: 0.1em 0.1em 2px rgba(122,122,122,0.5);
-    padding-right: 0;
+    padding-right: 16px;
     
   }
 .search-form-text:focus {
@@ -186,6 +190,10 @@ align-items: center;
   .preview-bar {
     height: 665px;
     background-image: url(../img/image_frame_84.jpg);
+    background-color: #e8e8e8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -53px;
   }
 
   .preview-content {
@@ -298,7 +306,8 @@ align-items: center;
   }
 
   .product {
-    margin-top: 100px;
+    max-width: 1600px;
+    margin: 100px auto 0;
   }
   .product-title {
     display: flex;
@@ -480,10 +489,15 @@ align-items: center;
     height: 438px;
     background-image: url(../img/subscribe_fon_2.png), url(../img/supscribe_fone.jpg);
     align-items: center;
+    background-color: #e8e8e8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -53px;
   }
 
   .subscribe-part1 {
     padding-left: 230px;
+    float: left;
   }
   .subscribe-part1 > img {
     margin-right: 30px;
@@ -542,6 +556,7 @@ align-items: center;
     display: flex;
     flex-direction: column;
     margin-left: 165px;
+    margin-top: 50px;
   }
 
   .subscribe-text4 {
@@ -566,12 +581,15 @@ align-items: center;
 
   .subscribe-form {
     display: flex;
+    align-self: center;
+    margin-top: 35px;
   }
 
   .subscribe-input {
     width: 202px;
     height: 46px;
     padding-left: 28px;
+    padding-right: 16px;
     padding-top: 0;
     padding-bottom: 0;
     background-color: #e1e1e1;
@@ -611,6 +629,12 @@ align-items: center;
 
   .subscribe-button:active {
     box-shadow: none;
+  }
+
+  footer {
+    margin-top: 97px;
+    display: flex;
+    flex-direction: column;
   }
 
   .footer-part1 {
@@ -673,26 +697,22 @@ align-items: center;
   }
 
   .footer-part3 {
-    width: 1600px;
-    height: 79px;
     background-color: #e6e6e6;
-    display: flex;
   }
 
   .copy {
-    font-size: 16px;
-    font-weight: 400;
     letter-spacing: 0.025em;
     color: #7a7a7a;
-    align-self: center;
-    margin-left: 230px;
+    float: left;
+    display: flex;
+    padding-left: 230px;
   }
   .social-icons {
     display: flex;
     justify-content: space-between;
     width: 190px;
-    align-items: center;
-    margin-left: 715px;
+    padding-left: 710px;
+    padding-top: 8px;
   }
   .social-link {
     display: flex;
