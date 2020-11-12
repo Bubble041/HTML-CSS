@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="logo">
+                <a class="logotype" href="#">
+                    <img class="logo-img" src="img/logo.png" alt="logo">
+                    <span>BRAN<span class="logo-text">D</span></span>
+                </a>
+            </div>
+            <div class="search">
+                <div class="browse">
+                    <select name="one" class="dropdown-select">
+                        <option value="">Browse</option>
+                        <option value="1">Option #1</option>
+                        <option value="2">Option #2</option>
+                        <option value="3">Option #3</option>
+                    </select>
+                </div>
+
+                <form class="search-form" action="#">
+                    <input class="search-form-text" type="text" placeholder="Search for Item...">
+                    <button class="search-form-button" type="submit"><img src="img/search.png" alt="search"></button>
+                </form>
+            </div>
+            <div class="login">
+                <a href="#" class="basket"><img src="img/forma_1_1113.png" alt="basket"></a>
+                <select class="my-account">
+                    <option value="">My Account</option>
+                        <option value="1">Option #1</option>
+                        <option value="2">Option #2</option>
+                        <option value="3">Option #3</option>
+                </select>
+            </div>
+        </div>
+    </header>
+<nav class="main-nav">
+    <div class="nav-wrapper">
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="products-man.html" class="nav-link">man</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">women</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">kids</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">accoseries</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">featured</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">hot deals</a></li>
+        </ul>
+    </div>
+  </nav>
+          <nav class="breadcrumbs">
+              <div class="container">
+                  <div class="breadcrumbs-content">
+                    <p class="breadcrumbs-subtitle">New Arrivals</p>
+                    <div class="breadcrumbs-nav">
+                        <ul class="breadcrumbs-links">
+                            <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">home/</a></li>
+                            <li class="breadcrumbs-item"><a href="products-man.html" class="breadcrumbs-link">men/</a></li>
+                            <li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link breadcrumbs-link-active">New Arrivals</a></li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+          </nav>
+          <main>
+            <h1 class="hidden">Shopping cart</h1>
+            <section class="container shopping_cart_content_all">
+                <h2 class="hidden">Shopping cart content</h2>
+                <div class="sc_product_details">
+                    <ul class="sc_product_details_list">
+                        <li class="sc_product_details_item sc_product_details_Firstitem">Product Details</li>
+                        <li class="sc_product_details_item">unite Price</li>
+                        <li class="sc_product_details_item">Quantity</li>
+                        <li class="sc_product_details_item">shipping</li>
+                        <li class="sc_product_details_item">Subtotal</li>
+                        <li class="sc_product_details_item">ACTION</li>
+                    </ul>
+                </div>
+                <div class="shopping_carts">
+                    <div class="shopping_cart">
+                        <div class="shopping_cart_product_desc">
+                            <img src="img/product_man1.jpg" alt="#" width="100px" height="115px">
+                            <div class="shopping_cart_product_text">
+                                <h2 class="shopping_cart_product_title">Mango  People  T-shirt</h2>
+                                <p class="shopping_cart_product_options">Color: <span>Red</span></p>
+                                <p class="shopping_cart_product_options">Size: <span>Xll</span></p>
+                            </div>
+                        </div>
+                        <ul class="shopping_cart_information">
+                            <li class="shopping_cart_price shopping_cart_text">$150</li>
+                            <li class="shopping_cart_quantity">
+                                <input type="text" value="2">
+                            </li>
+                            <li class="shopping_cart_shipping shopping_cart_text">FREE</li>
+                            <li class="shopping_cart_subtotal shopping_cart_text">$300</li>
+                            <li class="shopping_cart_action">
+                                <button><i class="fas fa-times-circle"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shopping_cart">
+                        <div class="shopping_cart_product_desc">
+                            <img src="img/product_man2.jpg" alt="#" width="100px" height="115px">
+                            <div class="shopping_cart_product_text">
+                                <h2 class="shopping_cart_product_title">Mango  People  T-shirt</h2>
+                                <p class="shopping_cart_product_options">Color: <span>Red</span></p>
+                                <p class="shopping_cart_product_options">Size: <span>Xll</span></p>
+                            </div>
+                        </div>
+                        <ul class="shopping_cart_information">
+                            <li class="shopping_cart_price shopping_cart_text">$150</li>
+                            <li class="shopping_cart_quantity">
+                                <input type="text" value="2">
+                            </li>
+                            <li class="shopping_cart_shipping shopping_cart_text">FREE</li>
+                            <li class="shopping_cart_subtotal shopping_cart_text">$300</li>
+                            <li class="shopping_cart_action">
+                                <button><i class="fas fa-times-circle"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shopping_cart">
+                        <div class="shopping_cart_product_desc">
+                            <img src="img/product_man3.jpg" alt="#" width="100px" height="115px">
+                            <div class="shopping_cart_product_text">
+                                <h2 class="shopping_cart_product_title">Mango  People  T-shirt</h2>
+                                <p class="shopping_cart_product_options">Color: <span>Red</span></p>
+                                <p class="shopping_cart_product_options">Size: <span>Xll</span></p>
+                            </div>
+                        </div>
+                        <ul class="shopping_cart_information">
+                            <li class="shopping_cart_price shopping_cart_text">$150</li>
+                            <li class="shopping_cart_quantity">
+                                <input type="text" value="2">
+                            </li>
+                            <li class="shopping_cart_shipping shopping_cart_text">FREE</li>
+                            <li class="shopping_cart_subtotal shopping_cart_text">$300</li>
+                            <li class="shopping_cart_action">
+                                <button><i class="fas fa-times-circle"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+            <section class="shopping_cart_btns">
+                <h2 class="hidden">Shopping cart btns</h2>
+                    <button class="shopping_cart_btn">cLEAR SHOPPING CART</button>
+                    <button class="shopping_cart_btn">cONTINUE sHOPPING</button>
+            </section>
+            </div>
+            <div class="container">
+                <form action="#" class="shopping_cart_form">
+                    <div class="shopping_cart_form1">
+                        <h2 class="shopping_cart_form_name">Shipping Adress</h2>
+                        <select class="shopping_cart_form1_country">
+                            <option value="0">Bangladesh</option>
+                            <option value="1">Austria</option>
+                            <option value="2">Russia</option>
+                        </select>
+                        <input type="text" placeholder="State" class="shopping_cart_form1_state">
+                        <input type="number" placeholder="Postcode / Zip" class="shopping_cart_form1_postcode">
+                        <button class="shopping_cart_form_btn">get a quote</button>
+                    </div>
+                    <div class="shopping_cart_form2">
+                        <h2 class="shopping_cart_form_name">coupon  discount</h2>
+                        <p class="shopping_cart_form2_prompt">Enter your coupon code if you have one</p>
+                        <input type="text" placeholder="State" class="shopping_cart_form2_coupon">
+                        <button class="shopping_cart_form_btn shopping_cart_form_btn2">Apply coupon</button>
+                    </div>
+                    <div class="shopping_cart_form3">
+                         <p class="shopping_cart_form3_sub_total">Sub total <span>$900</span></p>
+                         <p class="shopping_cart_form3_grand_total">GRAND TOTAL <span>$900</span></p>
+                         <div class="shopping_cart_form3_line"></div>
+                         <button class="shopping_cart_form3_btn">proceed to checkout</button>
+                    </div>
+                </form>
+            </div>
+          </main>
+          <footer>
+            <div class="subscribe-copy">
+                <div class="container">
+                <div class="subscribe-part1">
+                    <img src="img/ellipse_3_2206.png" alt="ava">
+                    <div class="subscribe-text-part1">
+                        <p class="subscribe-text1">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="subscribe-text2">Bin Burhan</p>
+                        <p class="subscribe-text2 subscribe-text3">Dhaka, Bd</p>
+                        <div class="subscribe-slider">
+                            <a href="#" class="rectangle"></a>
+                            <a href="#" class="rectangle rectangle-active"></a>
+                            <a href="#" class="rectangle"></a>
+                        </div>
+                    </div>
+                </div>
+                
+        
+                <div class="subscribe-part2">
+                    <div class="subscribe-text-part2">
+                        <p class="subscribe-text4">Subscribe</p>
+                        <p class="subscribe-text5">FOR OUR NEWLETTER AND PROMOTION</p>
+                    </div>
+                    <div class="subscribe-form">
+                        <input class="subscribe-input" type="email" placeholder="Enter Your Email">
+                        <button class="subscribe-button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+            <div class="footer-part1">
+                <div class="footer-text">
+                    <div class="logo">
+                        <a class="logotype" href="#">
+                            <img class="logo-img" src="img/logo.png" alt="logo">
+                            <span>BRAN<span class="logo-text">D</span></span>
+                        </a>
+                    </div>
+                    <p class="footer-p">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+                    <p class="footer-p">Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize</p>                       
+                </div>
+            </div>
+            <div class="footer-part2">
+                <div class="company">
+                    <p class="name-footer-list">COMPANY</p>
+                    <ul class="footer-list">
+                        <li class="footer-links"><a class="footer-link" href="#">Home</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">Shop</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">About</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">How it Works</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <p class="name-footer-list">INFORMATION</p>
+                    <ul class="footer-list">
+                        <li class="footer-links"><a class="footer-link" href="#">Tearms & Condition</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">Privacy Policy</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">How to Buy</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">How to Sell</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">Promotion</a></li>
+                    </ul>
+                </div>
+                <div class="shop-category">
+                    <p class="name-footer-list">SHOP CATEGORY</p>
+                    <ul class="footer-list">
+                        <li class="footer-links"><a class="footer-link" href="#">Men</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">Women</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">Child</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">Apparel</a></li>
+                        <li class="footer-links"><a class="footer-link" href="#">Brows All</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="footer-part3">
+                <div class="container">
+                <p class="copy">© 2017  Brand  All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f social-img"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter social-img"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in social-img"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p social-img"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-google-plus-g social-img"></i></a>
+                </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
