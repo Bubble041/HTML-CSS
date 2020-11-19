@@ -2,12 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-
+    <meta name="viewport" content="width=test, initial-scale=1.0">
+    <title>Home</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /*!
+         * chiefSlider (https://itchief.ru/lessons/php/feedback-form-for-website)
+         * Copyright 2018 Alexander Maltsev
+         * Licensed under MIT (https://github.com/itchief/feedback-form/blob/master/LICENSE)
+         */    
+        .slider {
+          border-top: 1px solid #eaeaea;
+          border-bottom: 1px solid #eaeaea;
+          position: relative;
+          overflow: hidden;
+          z-index: -2;
+        }
+    
+        .slider__wrapper {
+          display: flex;
+          transition: transform 0.6s ease;
+        }
+    
+        .slider__item {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+    
+        .slider__control {
+          position: absolute;
+          top: 50%;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          color: #fff;
+          text-align: center;
+          opacity: 0.5;
+          height: 50px;
+          transform: translateY(-50%);
+          background: rgba(0, 0, 0, .5);
+        }
+    
+        .slider__control_show {
+          display: flex;
+        }
+    
+        .slider__control:hover,
+        .slider__control:focus {
+          color: #fff;
+          text-decoration: none;
+          outline: 0;
+          opacity: .9;
+        }
+    
+        .slider__control_left {
+          left: 0;
+        }
+    
+        .slider__control_right {
+          right: 0;
+        }
+    
+        .slider__control::before {
+          content: '';
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: transparent no-repeat center center;
+          background-size: 100% 100%;
+        }
+    
+        .slider__control_left::before {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+    
+        .slider__control_right::before {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        }
+    
+        .slider__item>div {
+          line-height: 250px;
+          font-size: 100px;
+          text-align: center;
+        }
+      </style>
 </head>
 <body>
     <header class="header">
@@ -359,8 +440,7 @@
             </ul>
         </div>
       </nav>
-
-          <h1 class="hidden">Catalog For Man</h1>
+          <h1 class="hidden">Single page</h1>
           <nav class="breadcrumbs">
               <div class="container">
                   <div class="breadcrumbs-content">
@@ -376,79 +456,110 @@
               </div>
           </nav>
     <main>
-        <h2 class="hidden">Personal Area</h2>
-        <div class="container checkout_container">
-            <details class="checkout_section checkout_shipping_adress" open>
-                <summary>01. Shipping Adress</summary>
-                <div class="checkout_section_form">
-                    <div class="checkout_section_form1">
-                        <div class="checkout_section_form1_part">
-                            <h3 class="checkout_section_form1_title">Check as a guest or register</h3>
-                            <p class="checkout_section_form1_text">Register with us for future convenience</p>
-                        </div>
-                        <div class="checkout_section_form1_part checkout_section_form1_part2">
-                            <input type="radio" checked name="dva" id="dva1"/><label for="dva1">checkout as guest</label>
-                            <input type="radio" name="dva" id="dva2"/><label for="dva2">register</label>
-                        </div>
-                        <div class="checkout_section_form1_part">
-                            <h3 class="checkout_section_form1_title">register and save time!</h3>
-                            <p class="checkout_section_form1_text">Register with us for future convenience</p>
-                        </div>
-                        <div class="checkout_section_form1_part">
-                            <p class="checkout_section_form1_text"><i class="fas fa-angle-double-right"></i>Fast and easy checkout</p>
-                            <p class="checkout_section_form1_text"><i class="fas fa-angle-double-right"></i>Easy access to your order history and status</p>
-                        </div>
-                        <button class="checkout_section_form_btn">Continue</button>
+        <h2 class="hidden">Slider</h2>
+    <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__item">
+            <div style="height: 777px; background: #f7f7f7;"><img src="img/single_page_img.jpg" alt=""></div>
+          </div>
+          <div class="slider__item">
+            <div style="height: 777px; background: #f7f7f7"><img src="img/single_page_img.jpg" alt=""></div>
+          </div>
+          <div class="slider__item">
+            <div style="height: 777px; background: #f7f7f7;"><img src="img/single_page_img.jpg" alt=""></div>
+          </div>
+          <div class="slider__item">
+            <div style="height: 777px; background:  #f7f7f7"><img src="img/single_page_img.jpg" alt=""></div>
+          </div>
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+      </div>
+
+      <h2 class="hidden">Product description</h2>
+        <div class="container container_single">
+            <div class="single_desc">
+                <div class="single_desc_title">
+                    <p class="single_women_collection">WOMEN COLLECTION</p>
+                    <div class="single_devider"></div>
+                </div>
+                <h3 class="single_title">Moschino Cheap And Chic</h3>
+                <div class="single_desc_details">
+                    <p class="single_desc_details_text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                    <div class="single_desc_mat_designer">
+                        <p class="single_desc_details_material">MATERIAL: <span>COTTON</span></p>
+                        <p class="single_desc_details_material">DESIGNER: <span>BINBURHAN</span></p>
                     </div>
-                    <div class="checkout_section_form2">
-                        <div class="checkout_section_form1_part">
-                            <h3 class="checkout_section_form1_title">Already registed?</h3>
-                            <p class="checkout_section_form1_text">Please log in below</p>
+                    <p class="single_desc_price">$561</p>
+                </div>
+                <form action="#" class="single_bar">
+                    <div class="sigle_bar_all_choice">
+                        <div class="single_bar_choice single_bar_choice_color">
+                            <h4 class="single_bar_title">CHOOSE COLOR</h4>
+                            <select name="#" class="single_bar_select single_bar_select_color">
+                                <option value="">Red</option>
+                                <option value="">White</option>
+                                <option value="">Black</option>
+                            </select>
+                            <div class="single_bar_color"></div>
                         </div>
-                        <form action="#" class="checkout_section_form2_login">
-                            <p class="checkout_section_form2_login_title">EMAIL ADDRESS <span>*</span></p>
-                            <input type="text" class="checkout_section_form2_login_input">
-                            <p class="checkout_section_form2_login_title">PASSWORD <span>*</span></p>
-                            <input type="password" class="checkout_section_form2_login_input">
-                            <p class="checkout_section_form2_login_prompt">* Required Fileds</p>
-                            <div class="checkout_section_form2_login_btn">
-                                <button class="checkout_section_form_btn">Log in</button>
-                                <a href="#">Forgot Password ?</a>
-                            </div>
-                        </form>
+                        <div class="single_bar_choice">
+                            <h4 class="single_bar_title">CHOOSE SIZE</h4>
+                            <select name="#" class="single_bar_select">
+                                <option value="">XL</option>
+                                <option value="">XXL</option>
+                                <option value="">XS</option>
+                                <option value="">S</option>
+                                <option value="">L</option>
+                                <option value="">M</option>
+                            </select>
+                        </div>
+                        <div class="single_bar_choice">
+                            <h4 class="single_bar_title">CHOOSE SIZE</h4>
+                            <input type="number" placeholder="2" class="single_bar_input">
+                        </div>
                     </div>
-                </div>
-            </details>
-            <details class="checkout_section checkout_shipping_adress">
-                <summary>02. BILLING INFORMATION</summary>
-                <div class="checkout_section_form">
-                    Some content
-                </div>
-            </details>
-            <details class="checkout_section checkout_shipping_adress">
-                <summary>03. SHIPPING INFORMATION</summary>
-                <div class="checkout_section_form">
-                    Some content
-                </div>
-            </details>
-            <details class="checkout_section checkout_shipping_adress">
-                <summary>04. SHIPPING METHOD</summary>
-                <div class="checkout_section_form">
-                    Some content
-                </div>
-            </details>
-            <details class="checkout_section checkout_shipping_adress">
-                <summary>05. PAYMENT METHOD</summary>
-                <div class="checkout_section_form">
-                    Some content
-                </div>
-            </details>
-            <details class="checkout_section checkout_shipping_adress">
-                <summary>06. ORDER REVIEW</summary>
-                <div class="checkout_section_form">
-                    Some content
-                </div>
-            </details>
+                    <button class="single_bar_btn"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+                </form>        
+            </div>
+        
+            <figure class="product-table product_table_single">
+                <h3 class="product_table_title">you may like also</h3>
+                <ul class="products-list">
+                    <li class="product-icon product-icon-single"><a href="#" class="product-link">
+                        <img src="img/single_product1.jpg" alt="product">
+                        <p class="product-name">BLAZE LEGGINGS</p>
+                        <p class="product-price">$52.00</p>
+                    </a>
+                    <a href="shopping_cart.html" class="product-icon-hover">
+                        <div class="product-icon-hover-btn"><i class="fas fa-shopping-cart"></i><p>Add to Cart</p></div>
+                    </a></li>
+                        <li class="product-icon product-icon-single"><a href="#" class="product-link">
+                            <img src="img/single_product2.png" alt="product" class="single_img_position">
+                            <p class="product-name">ALEXA SWEATER</p>
+                            <p class="product-price">$52.00</p>
+                        </a>
+                        <a href="shopping_cart.html" class="product-icon-hover">
+                            <div class="product-icon-hover-btn"><i class="fas fa-shopping-cart"></i><p>Add to Cart</p></div>
+                        </a></li>
+                        <li class="product-icon product-icon-single"><a href="#" class="product-link">
+                            <img src="img/single_product3.jpg" alt="product">
+                            <p class="product-name">AGNES TOP</p>
+                            <p class="product-price">$52.00</p>
+                        </a>
+                        <a href="shopping_cart.html" class="product-icon-hover">
+                            <div class="product-icon-hover-btn"><i class="fas fa-shopping-cart"></i><p>Add to Cart</p></div>
+                        </a></li>
+                        <li class="product-icon product-icon-single"><a href="#" class="product-link">
+                            <img src="img/single_product4.jpg" alt="product">
+                            <p class="product-name">SYLVA SWEATER</p>
+                            <p class="product-price">$52.00</p>
+                        </a>
+                        <a href="shopping_cart.html" class="product-icon-hover">
+                            <div class="product-icon-hover-btn"><i class="fas fa-shopping-cart"></i><p>Add to Cart</p></div>
+                        </a></li>      
+                </ul>
+            </figure>
         </div>
     </main>
       <footer class="products_footer">
@@ -542,5 +653,96 @@
             </div>
         </div>
     </footer>
+    <script>
+        'use strict';
+        var multiItemSlider = (function () {
+          return function (selector, config) {
+            var
+              _mainElement = document.querySelector(selector), // основный элемент блока
+              _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+              _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+              _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+              _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+              _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+              _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+              _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+              _positionLeftItem = 0, // позиция левого активного элемента
+              _transform = 0, // значение транфсофрмации .slider_wrapper
+              _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+              _items = []; // массив элементов
+            // наполнение массива _items
+            _sliderItems.forEach(function (item, index) {
+              _items.push({ item: item, position: index, transform: 0 });
+            });
+    
+            var position = {
+              getMin: 0,
+              getMax: _items.length - 1,
+            }
+    
+            var _transformItem = function (direction) {
+              if (direction === 'right') {
+                if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+                  return;
+                }
+                if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+                  _sliderControlLeft.classList.add('slider__control_show');
+                }
+                if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+                  _sliderControlRight.classList.remove('slider__control_show');
+                }
+                _positionLeftItem++;
+                _transform -= _step;
+              }
+              if (direction === 'left') {
+                if (_positionLeftItem <= position.getMin) {
+                  return;
+                }
+                if (!_sliderControlRight.classList.contains('slider__control_show')) {
+                  _sliderControlRight.classList.add('slider__control_show');
+                }
+                if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+                  _sliderControlLeft.classList.remove('slider__control_show');
+                }
+                _positionLeftItem--;
+                _transform += _step;
+              }
+              _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+            }
+    
+            // обработчик события click для кнопок "назад" и "вперед"
+            var _controlClick = function (e) {
+              if (e.target.classList.contains('slider__control')) {
+                e.preventDefault();
+                var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+                _transformItem(direction);
+              }
+            };
+    
+            var _setUpListeners = function () {
+              // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+              _sliderControls.forEach(function (item) {
+                item.addEventListener('click', _controlClick);
+              });
+            }
+    
+            // инициализация
+            _setUpListeners();
+    
+            return {
+              right: function () { // метод right
+                _transformItem('right');
+              },
+              left: function () { // метод left
+                _transformItem('left');
+              }
+            }
+    
+          }
+        }());
+    
+        var slider = multiItemSlider('.slider')
+    
+      </script>
 </body>
 </html>
