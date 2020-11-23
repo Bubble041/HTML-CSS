@@ -1,6 +1,13 @@
 @import "../variables/_variables";
 
+html {
+  height: 100%;
+}
+
 body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: Lato, Arial, Helvetica, sans-serif;
 }
@@ -426,8 +433,10 @@ body {
   }
 
   .preview-content {
+    width: 700px;
     padding-top: 224px;
     margin-left: 230px;
+    margin-right: 0;
     -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 	  animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
   }
@@ -462,7 +471,10 @@ body {
     opacity: 1;
   }
 }
-
+  .preview-text {
+    width: 700px;
+    margin: 0;
+  }
   .preview-text-all {
     display: block;
     margin: 0;
@@ -648,7 +660,6 @@ body {
           width: 123px;
           height: 39px;
           border: 1px solid #ffffff;
-          background-color: none;
           &> i {
             font-size: 24px;
           }
@@ -656,6 +667,7 @@ body {
       }
     }
     &-name {
+      max-width: 250px;
       font-size: 13px;
       line-height: 1.2;
       font-weight: 900;
@@ -900,10 +912,13 @@ body {
     box-shadow: 0.1em 0.1em 2px rgba(122,122,122,0.5);
     &:focus {
       outline: none;
+      border: 0.5px solid black;
+      border-right: none;
     }
   }
 
   .subscribe-button {
+    @include transitionForButton ();
     width: 104px;
     height: 46px;
     background-color: $textColorPink;
@@ -915,6 +930,10 @@ body {
     letter-spacing: 0.025em;
     color: #ffffff;
     box-shadow: 0.1em 0.1em 2px rgba(122,122,122,0.5);
+    &:hover {
+      background-color: #fff;
+      color: $textColorPink;
+    }
     &:focus {
       outline: none;
     }
@@ -923,7 +942,11 @@ body {
     }
   }
 
+  .content {
+    flex: 1 0 auto;
+  }
   footer {
+    flex: 0 0 auto;
     margin-top: 97px;
     display: flex;
     flex-direction: column;

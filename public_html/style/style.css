@@ -1,4 +1,16 @@
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   font-family: Lato, Arial, Helvetica, sans-serif;
 }
@@ -540,8 +552,10 @@ body {
 }
 
 .preview-content {
+  width: 700px;
   padding-top: 224px;
   margin-left: 230px;
+  margin-right: 0;
   -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
@@ -576,6 +590,11 @@ body {
     filter: blur(0px);
     opacity: 1;
   }
+}
+
+.preview-text {
+  width: 700px;
+  margin: 0;
 }
 
 .preview-text-all {
@@ -839,6 +858,7 @@ body {
 }
 
 .product-name {
+  max-width: 250px;
   font-size: 13px;
   line-height: 1.2;
   font-weight: 900;
@@ -1143,9 +1163,13 @@ body {
 
 .subscribe-input:focus {
   outline: none;
+  border: 0.5px solid black;
+  border-right: none;
 }
 
 .subscribe-button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   width: 104px;
   height: 46px;
   background-color: #f16d7f;
@@ -1160,6 +1184,11 @@ body {
           box-shadow: 0.1em 0.1em 2px rgba(122, 122, 122, 0.5);
 }
 
+.subscribe-button:hover {
+  background-color: #fff;
+  color: #f16d7f;
+}
+
 .subscribe-button:focus {
   outline: none;
 }
@@ -1169,7 +1198,16 @@ body {
           box-shadow: none;
 }
 
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
 footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   margin-top: 97px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1660,13 +1698,6 @@ details summary::-webkit-details-marker {
 .products_sort_list_main::-webkit-details-marker {
   display: none;
 }
-input[type='number'] {
-  -moz-appearance: textfield;
-}
-
-details, summary {
-  display: block;
-  }
 
 .products_sort_list_main:after {
   content: '\f150';
