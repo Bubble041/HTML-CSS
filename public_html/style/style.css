@@ -904,6 +904,8 @@ body {
 }
 
 .all-product {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   width: 212px;
   height: 48px;
   background-color: #f16d7f;
@@ -915,6 +917,11 @@ body {
   color: #ffffff;
   -webkit-box-shadow: 0.1em 0.1em 2px rgba(122, 122, 122, 0.5);
           box-shadow: 0.1em 0.1em 2px rgba(122, 122, 122, 0.5);
+}
+
+.all-product:hover {
+  color: #f16d7f;
+  background-color: #fff;
 }
 
 .all-product:focus {

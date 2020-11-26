@@ -706,6 +706,7 @@ body {
   }
 
   .all-product {
+    @include transitionForButton ();
     width: 212px;
     height: 48px;
     background-color: $textColorPink;
@@ -716,6 +717,10 @@ body {
     letter-spacing: 0.025em;
     color: #ffffff;
     box-shadow: 0.1em 0.1em 2px rgba(122,122,122,0.5);
+    &:hover {
+      color: $textColorPink;
+      background-color: #fff;
+    }
     &:focus{
       outline: none;
     }
